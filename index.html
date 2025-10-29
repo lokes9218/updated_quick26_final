@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+     <style>
         .font-lilita {
             font-family: 'Lilita One', cursive;
         }
@@ -24,132 +24,210 @@
             opacity: 1;
             transform: translateY(0);
         }
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 1440px;
-      margin: 30px auto;
-      padding: 20px;
-    }
-    h1 {
-      color: #6b21a8;
-      font-size: 28px;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .tabs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 30px;
-    }
-    .tab-btn {
-      border: 2px solid #6b21a8;
-      border-radius: 8px;
-      padding: 10px 18px;
-      background: transparent;
-      color: #6b21a8;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    .tab-btn.active {
-      background: #6b21a8;
-      color: #fff;
-      box-shadow: 0 0 10px #a855f7;
-    }
-    .tab-btn:hover {
-      background: #ede9fe;
-    }
-    .search-bar {
-      max-width: 400px;
-      margin: 0 auto 30px auto;
-    }
-    .search-bar input {
-      width: 100%;
-      padding: 10px 15px;
-      border: 2px solid #c084fc;
-      border-radius: 8px;
-      font-size: 16px;
-      outline: none;
-      transition: 0.2s;
-    }
-    .search-bar input:focus {
-      border-color: #6b21a8;
-    }
-    .committee-section {
-      margin-bottom: 40px;
-    }
-    .committee-section h2 {
-      color: #6b21a8;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 10px;
-      border-radius: 8px;
-      transition: 0.2s;
-    }
-    li:hover {
-      background: #f3e8ff;
-    }
-    .icon {
-      flex-shrink: 0;
-      margin-top: 3px;
-    }
-    .icon svg path {
-      fill: #8b10ef;
-    }
-    .no-results {
-      text-align: center;
-      color: gray;
-      font-size: 18px;
-      margin-top: 30px;
-    }
-    .member-name {
-      font-weight: bold;
-      color: #6b21a8;
-    }
-    .member-affiliation {
-      color: #555;
-    }.map-container {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-    iframe {
-    border: 0;
-    width: 800px;
-    height: 450px;
-    border-radius: 12px;
-    }
-    .ab{
-        { font-family: Arial, Helvetica, sans-serif; margin: 20px; background:#f7f3fb; }
-    .map-card { width: 820px; max-width: 100%; border-radius: 6px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.12); background:white;}
-    .map-top { padding: 12px 16px; display:flex; align-items:center; justify-content:space-between; }
-    .info { font-weight:700; color:#111; }
-    .map-frame { border:0; width:100%; height:480px; display:block; }
-    .small-note { font-size:12px; color:#666; padding:8px 16px; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1440px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #6b21a8;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .tab-btn {
+            border: 2px solid #6b21a8;
+            border-radius: 8px;
+            padding: 10px 18px;
+            background: transparent;
+            color: #6b21a8;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .tab-btn.active {
+            background: #6b21a8;
+            color: #fff;
+            box-shadow: 0 0 10px #a855f7;
+        }
+        .tab-btn:hover {
+            background: #ede9fe;
+        }
+        .search-bar {
+            max-width: 400px;
+            margin: 0 auto 30px auto;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #c084fc;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.2s;
+        }
+        .search-bar input:focus {
+            border-color: #6b21a8;
+        }
+        .committee-section {
+            margin-bottom: 40px;
+        }
+        .committee-section h2 {
+            color: #6b21a8;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+        li:hover {
+            background: #f3e8ff;
+        }
+        .icon {
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .icon svg path {
+            fill: #8b10ef;
+        }
+        .no-results {
+            text-align: center;
+            color: gray;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .member-name {
+            font-weight: bold;
+            color: #6b21a8;
+        }
+        .member-affiliation {
+            color: #555;
+        }
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        iframe {
+            border: 0;
+            width: 800px;
+            height: 450px;
+            border-radius: 12px;
+        }
+        
+        .ab {
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 20px; 
+            background:#f7f3fb; 
+        }
+        .map-card { 
+            width: 820px; 
+            max-width: 100%; 
+            border-radius: 6px; 
+            overflow: hidden; 
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12); 
+            background:white;
+        }
+        .map-top { 
+            padding: 12px 16px; 
+            display:flex; 
+            align-items:center; 
+            justify-content:space-between; 
+        }
+        .info { 
+            font-weight:700; 
+            color:#111; 
+        }
+        .map-frame { 
+            border:0; 
+            width:100%; 
+            height:480px; 
+            display:block; 
+        }
+        .small-note { 
+            font-size:12px; 
+            color:#666; 
+            padding:8px 16px; 
+        }
+        
+        /* Fixed Logo Styles */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .logo-container img {
+            height: 50px !important; /* Using !important to override any conflicting styles */
+            width: auto;
+            object-fit: contain;
+        }
+        
+        /* For tablets and laptops */
+        @media (max-width: 1024px) {
+            .logo-container {
+                gap: 50px;
+            }
+            .logo-container img {
+                height: 50px !important;
+            }
+        }
+        
+        /* For mobile phones */
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .logo-container img {
+                height: 50px !important;
+            }
+        }
+        
+        /* For small mobile phones */
+        @media (max-width: 480px) {
+            .logo-container {
+                gap: 20px;
+            }
+            .logo-container img {
+                height: 50px !important;
+            }
+        }
     </style>
+    
 
 <body class="font-sora">
     <!-- Navigation -->
     <header class="w-screen font-sora bg-purple-50 text-justify sticky top-0 z-50">
+         
         <div class="max-w-[1440px] mx-auto">
             <div class="flex backdrop-blur-sm bg-transparent px-5 py-5 items-center justify-between w-full">
                 <div class="flex gap-2 items-center">
@@ -211,24 +289,35 @@
                 
 
                         
-                        <div style="display: flex; justify-content: center; align-items: center; gap: 30px;">
+                <!-- <div style="display: flex; justify-content: center; align-items: center; gap: 150px;">
                 <img src="images/vit_cystal_logo.png" alt="VIT Chennai" style="height: 100px;">
-                <img src="images/deakin-logo.png" alt="Deakin University" style="height: 100px;">
+                <img src="images/deakin-university-logo_freelogovectors.net_.png" alt="Deakin University" style="height: 100px;">
+                </div> -->
+                <div class="ar">
+
+                    <div class="logo-container">
+                        <div class="logo-wrapper">
+                            <img src="images/vit_cystal_logo.png" alt="VIT Chennai">
+                        </div>
+                        <div class="logo-wrapper">
+                            <img src="images/deakin-university-logo_freelogovectors.net_.png" alt="Deakin University">
+                        </div>
+                    </div>
                 </div>
-                
+
                 
                 <div class="mt-2 mx-auto sm:px-4 title scroll-reveal">
                     <p class="text-lg sm:text-2xl text-center text-purple-800 font-semibold">1st International Conference on Quantum Innovations for Computing and Knowledge Systems (QUICK’26)</p>
                 </div>
                 <div class="mt-4 sm:mt-6 subtitle scroll-reveal">
                     <p class="text-center text-purple-800 font-semibold">Organized by </p>
-                    <p class="text-center text-purple-800 font-semibold">School of Computer Science and Engineering (SCOPE),
+                    <p class="text-center text-purple-800 font-semibold">School of Computer Science and Engineering  SCOPE,
                         <p class="text-center text-purple-800 font-semibold" >  Vellore Institute of Technology, Chennai, India</p>
                 </div>
                 <div class="mt-4 sm:mt-6 subtitle scroll-reveal">
                     <p class="text-center text-purple-800 font-semibold">In Association With</p>
-                    <p class="text-center text-purple-800 font-semibold">Faculty of Computer Science and Information Technology
-                    <p class="text-center text-purple-800 font-semibold" >  (UANTIMA), Research Program - Deakin  University, Australia </p>
+                    <!-- <p class="text-center text-purple-800 font-semibold">Faculty of Computer Science and Information Technology -->
+                    <p class="text-center text-purple-800 font-semibold" >  QUANTIMA RESEARCH PROGRAM Deakin University, Australia </p>
                     
                 </div>
               
@@ -239,197 +328,214 @@
                 </section>  
 
        
-        <section id="about" >
+        <section id="about">
             <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-10 w-full max-w-[1440px] mx-auto">
-                <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">Instructions & Info</h1>
-                <div class="flex flex-col items-center text-center info-item scroll-reveal mt-10">
-                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10"><div class="flex flex-col items-center text-center info-item" data-sr-id="13" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);"><h1 class="text-morange text-lg sm:text-2xl font-semibold">Instruction to Authors</h1><p>For Instructions: <span class="underline cursor-pointer">( Coming Soon )</span></p></div><div class="flex flex-col items-center text-center info-item" data-sr-id="14" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);"><h1 class="text-morange text-lg sm:text-2xl font-semibold">Online Presentation Track Details</h1><p>Day 1 Detailed Schedule: <span class="underline cursor-pointer">( Coming Soon )</span></p><p>Day 2 Detailed Schedule: <span class="underline cursor-pointer">( Coming Soon )</span></p></div><div class="flex flex-col items-center text-center info-item" data-sr-id="15" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);"><h1 class="text-morange text-lg sm:text-2xl font-semibold">ICRTAC'25 Conference Schedule</h1><p>For complete schedule details: <span class="underline cursor-pointer">( Coming Soon )</span></p></div><div class="flex flex-col items-center text-center info-item" data-sr-id="16" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);"><h1 class="text-morange text-lg sm:text-2xl font-semibold">Offline Presentation Track Details</h1><p>For Date, Time and Venue details: <span class="underline cursor-pointer">( Coming Soon )</span></p></div></div>
-            </div>
-            
-
-
-
-
-        </section>
-        
-               
-
-        <!-- About Section -->
-        <section id="about" class="bg-purple-100 mt-10">
-            <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-10 w-full max-w-[1440px] mx-auto">
-                <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">About VIT</h1>
-                <hr class="h-[2px] bg-purple-700">
-                <div class="flex flex-col lg:flex-row gap-5 about-vit-content scroll-reveal">
-                    <div class="p-1 basis-2/3">
-                        <p class="mt-3">
-                            Vellore Institute of Technology (VIT) was established with the aim of providing quality higher education on par with international standards. Vellore Institute of Technology (VIT), Vellore was established in 1984 as Vellore Engineering College, with 180 students and 3 programs. Today it has evolved in to a deemed to be University with over 40,000 students offering 47 Undergraduate and 46 Postgraduate programs and having 17 schools in two campuses. In QS World University Ranking by Subject 2025, VIT is globally ranked at 142 in the broad subject area “Engineering and Technology”. In the same ranking, in the subject areas Computer Science and Information Systems VIT is ranked globally at 110 and in Data Science and AI VIT is ranked in the bracket 51-100.   
-                        </p>
-                        
-                    </div>
-                    
-                    <div class="basis-1/3 flex items-center justify-center">
-                        <img src="images/vit.png" alt="VIT" class="mt-3 w-full object-cover">
-                    </div>
+                <h1 class="text-xl sm:text-2xl font-semibold text-purple-800 mb-10">Instructions & Info</h1>
                 
-                </div>
-            
-            
-                <h1 class="text-xl sm:text-2xl font-semibold text-purple-800 mt-5  about-vit-content" data-sr-id="21" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: all, opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.8s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.8s;">About Deakin  University</h1>
-                <hr class="h-[2px] bg-purple-700">
-
-                <div class="flex flex-col lg:flex-row gap-5 about-vit-content scroll-reveal">
-                    <div class="p-1 basis-2/3">
-                        <p class="mt-3">
-                            As one of Australia's leading, most progressive 
-                            universities, Deakin has built a strong reputation for 
-                            both excellence in education that leads to 
-                            employability and research that has a positive real
-                            world impact. Deakin has strong global linkages, world
-                            class research and an educational portfolio that blends 
-                            the best of campus and digital delivery into a highly 
-                            supportive and personalised student experience. Over 
-                            50+ year history, Deakin has grown to be one of the top 
-                            universities worldwide. Its passion and commitment to 
-                            teaching, research and student success is recognised by 
-                            local and international ranking bodies and students.
-                        </p>
-                    </div>
-                   
-                    <div class="basis-1/3 flex items-center justify-center">
-                        <img src="images/TRUONG_DEAKIN_UNIVERSITY.jpg" alt="Deakin University"  class="mt-3 w-full object-cover" style="height: 200px;">
-                    </div>
-                    
-        </section>
-
-        
-
-
-        <section id="about" class="bg-purple-100 ">
-            <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-0 flex flex-col lg:flex-row gap-5 w-full max-w-[1440px] mx-auto">
-                    <div class="flex-1">
-                        <div class="p-1 about-content scroll-reveal">
-                            <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">About the Conference</h1>
-                                
-                                <hr class="h-[2px] bg-purple-700">
-                                <div class="flex flex-col lg:flex-row gap-5">
-                                    <p class="mt-2 basis-2/3">
-                                        QUICK 2026: Quantum Innovations for 
-                                        Computing and Knowledge Systems brings 
-                                        together leading researchers, industry pioneers, 
-                                        and policymakers to explore transformative 
-                                        breakthroughs in quantum science and their 
-                                        real-world applications. The scope of the 
-                                        conference QUICK’26 will highlight progress in 
-                                        quantum computing, advances in quantum 
-                                        algorithms, AI, machine learning, quantum 
-                                        materials, devices, and sensors will showcase 
-                                        innovations in topological states, quantum
-                                        enhanced sensing, and cryogenic interfaces that 
-                                        underpin next-generation technologies.  
-                                        A 
-                                        special emphasis on Quantum Artificial 
-                                        Intelligence (QAI) will address the convergence 
-                                        of quantum mechanics and intelligent systems 
-                                        Additionally, 
-                                        quantum-safe 
-                                        cryptography, 
-                                        knowledge systems, and cross-disciplinary use 
-                                        cases will examine the role of quantum 
-                                        technologies. 
-                                    </p>
-                                    <div class="basis-1/3 flex items-center justify-center">
-                                    <img src="images/conference.png" alt="conference"  class="mt-3 w-full object-cover" style ="height: 200px;">
-                                     </div>
-                                </div>
-        
-                            <div class="p-1 mt-10 objectives-content scroll-reveal">
-                                <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">Objectives</h1>
-                                <hr class="h-[2px] bg-purple-700">
-                                <ul class="list-disc list-inside mt-3">
-                                    <li>Explore the potential applications of advanced techniques in computing to provide innovative solutions</li>
-                                    <li>Provide an interdisciplinary platform for researchers, practitioners, and educators to discuss contemporary innovations in advanced computing and suggest sustainable solutions to real world problems</li>
-                                    <li>Investigate novel methods in automation and intelligent techniques, integrating cutting-edge computing technologies with the use of Intelligent Process Automation</li>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- Instruction to Authors -->
+                    <div class="flex flex-col items-start text-left info-item bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h2 class="text-orange-600 text-lg sm:text-2xl font-semibold mb-4 w-full text-center">Instruction to Authors</h2>
+                        <div class="space-y-4 text-gray-700 text-sm sm:text-base">
+                            <p>Authors must prepare their manuscripts in accordance with the ACM Master Article Template </p>
+                            
+                            <div>
+                                <p class="font-semibold text-gray-800 mb-2">Template formats available:</p>
+                                <ul class="list-disc list-inside ml-4 space-y-1">
+                                    <li><strong>LaTeX:</strong> acmart class file</li>
+                                    <li><strong>Microsoft Word:</strong> ACM article template (.docx)</li>
+                                </ul>
+                            </div>
+                            
+                            <div >
+                                <p class="text-sm">Templates and detailed instructions are available at:</p>
+                                <a href="https://www.acm.org/publications/proceedings-template" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline font-medium break-all">
+                                    👉 https://www.acm.org/publications/proceedings-template
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <p class="font-semibold text-gray-800 mb-2">Paper length:</p>
+                                <ul class="list-disc list-inside ml-4 space-y-1">
+                                    <li><strong>Full Papers:</strong> up to 8 pages (including figures, tables, and references)</li>
+                                    <li><strong>Short Papers / Posters:</strong> up to 4 pages</li>
+                                    <li><strong>Abstracts / Work-in-Progress:</strong> up to 2 pages</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <p class="font-semibold text-gray-800 mb-2">Paper format:</p>
+                                <ul class="list-disc list-inside ml-4 space-y-1">
+                                    <li><strong>Page size:</strong> US Letter (8.5" × 11")</li>
+                                    <li><strong>Two-column format</strong></li>
+                                    <li>Fonts, margins, and spacing must conform to ACM specifications.</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-          
-        </section>
-        
-        <section id="about" class="bg-purple-100 ">
-            <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-0 flex flex-col lg:flex-row gap-5 w-full max-w-[1440px] mx-auto">
-                <div class="p-1 mt-10 tracks-content scroll-reveal">
-                    <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">Tracks</h1>
-                    <hr class="h-[2px] bg-purple-700">
-                    <p class="text-base mt-2">
-                        The eighth edition of QUICK’26 invites submissions of original unpublished technical papers on the following topics, but not limited to:
-                    </p>
 
-                    <p class="font-bold mt-3">Track I — Quantum Computing Architectures & Technologies</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Quantum processor architectures and scalable hardware design.</li>
-                        <li>Superconducting qubits, trapped ions, photonic and spin-based quantum systems.</li>
-                        <li>Quantum error correction, fault tolerance, and noise mitigation methods.</li>
-                        <li>Quantum interconnects, cryogenic control systems, and hybrid classical–quantum integration.</li>
-                        <li>Quantum cloud infrastructure and distributed quantum computing environments.</li>
-                    </ul>
+                    <!-- Online Presentation Track Details -->
+                    <div class="flex flex-col items-center text-center info-item bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h2 class="text-orange-600 text-lg sm:text-2xl font-semibold mb-4">Online Presentation Track Details</h2>
+                        <div class="space-y-2">
+                            <p class="text-gray-700">Day 1 Detailed Schedule: <span class="underline cursor-pointer text-blue-600 hover:text-blue-800">( Coming Soon )</span></p>
+                            <p class="text-gray-700">Day 2 Detailed Schedule: <span class="underline cursor-pointer text-blue-600 hover:text-blue-800">( Coming Soon )</span></p>
+                        </div>
+                    </div>
 
-                    <p class="font-bold mt-3">Track II — Quantum Algorithms & Computing Paradigms</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Design and optimization of quantum algorithms for real-world applications.</li>
-                        <li>Quantum machine learning and data encoding strategies.</li>
-                        <li>Variational quantum eigensolvers (VQE) and quantum approximate optimization algorithms (QAOA).</li>
-                        <li>Quantum-inspired classical algorithms and hybrid frameworks.</li>
-                        <li>Simulation of quantum systems and performance benchmarking.</li>
-                    </ul>
+                    <!-- QUICK'26 Conference Schedule -->
+                    <div class="flex flex-col items-center text-center info-item bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h2 class="text-orange-600 text-lg sm:text-2xl font-semibold mb-4">QUICK'26 Conference Schedule</h2>
+                        <p class="text-gray-700">For complete schedule details: <span class="underline cursor-pointer text-blue-600 hover:text-blue-800">( Coming Soon )</span></p>
+                    </div>
 
-                    <p class="font-bold mt-3">Track III — Quantum AI, Knowledge Systems & Applications</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Quantum-enhanced artificial intelligence and deep learning models.</li>
-                        <li>Quantum knowledge graphs and cognitive reasoning frameworks.</li>
-                        <li>Applications of quantum AI in healthcare, finance, and cryptography.</li>
-                        <li>Quantum natural language processing and knowledge discovery systems.</li>
-                        <li>Interdisciplinary quantum–AI collaborations for decision-making and automation.</li>
-                    </ul>
-
-                    <p class="font-bold mt-3">Track IV — Quantum Materials, Devices & Emerging Technologies</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Novel quantum materials for computing and communication devices.</li>
-                        <li>Spintronics, topological insulators, and superconducting materials.</li>
-                        <li>Quantum photonics and optoelectronic device engineering.</li>
-                        <li>Quantum sensors, metrology, and next-generation transistors.</li>
-                        <li>Emerging technologies integrating quantum, AI, and nanotechnology ecosystems.</li>
-                    </ul>
-
-                    <p class="font-bold mt-3">Cross-Disciplinary Focus:</p>
-                    <ul class="list-disc list-inside ml-4">
-                        <li>Quantum networking and secure quantum communications.</li>
-                        <li>Post-quantum cryptography and blockchain resilience.</li>
-                        <li>Quantum education, simulation tools, and cloud-based experimentation.</li>
-                        <li>Ethical, environmental, and societal implications of quantum technologies.</li>
-                    </ul>
+                    <!-- Offline Presentation Track Details -->
+                    <div class="flex flex-col items-center text-center info-item bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <h2 class="text-orange-600 text-lg sm:text-2xl font-semibold mb-4">Offline Presentation Track Details</h2>
+                        <p class="text-gray-700">For Date, Time and Venue details: <span class="underline cursor-pointer text-blue-600 hover:text-blue-800">( Coming Soon )</span></p>
+                    </div>
                 </div>
             </div>
         </section>
         
-       
-                
-    
-        <section id="about" class="bg-purple-100 ">
-            <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-0 flex flex-col lg:flex-row gap-5 w-full max-w-[1440px] mx-auto">  
-                    <!-- Brochure Section -->
-                    <div class="p-1 mt-10 brochure-content mb-10 scroll-reveal">
-                        <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">Brochure</h1>
-                        <hr class="h-[2px] bg-purple-700">
-                        <div class="flex justify-center mt-3 ">
-                            <a href="images/Conference-Brochure-V5-Final-V4.pdf"  download>
-                                <button class="px-10 py-3 text-xl rounded-md my-3 bg-purple-800 border border-purple-800 font-semibold text-white hover:bg-purple-50 hover:text-purple-800 duration-200 transition-all ease-in-out">
-                                    Download Now
-                                </button>
-                            </a>
-                        </div>
-                    </div>
+             
+        <section id="about" class="bg-purple-100 mt-10">
+        <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-10 w-full max-w-[1440px] mx-auto">
+            <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">About VIT</h1>
+            <hr class="h-[2px] bg-purple-700 border-0 mt-2 mb-4">
+            
+            <div class="flex flex-col lg:flex-row gap-5 about-vit-content scroll-reveal">
+                <div class="p-1 basis-2/3">
+                    <p class="mt-3 leading-relaxed text-gray-800 text-justify">
+                        Vellore Institute of Technology (VIT) was established with the aim of providing quality higher education on par with international standards. Vellore Institute of Technology (VIT), Vellore was established in 1984 as Vellore Engineering College, with 180 students and 3 programs. Today it has evolved in to a deemed to be University with over 40,000 students offering 47 Undergraduate and 46 Postgraduate programs and having 17 schools in two campuses. In QS World University Ranking by Subject 2025, VIT is globally ranked at 142 in the broad subject area "Engineering and Technology". In the same ranking, in the subject areas Computer Science and Information Systems VIT is ranked globally at 110 and in Data Science and AI VIT is ranked in the bracket 51-100.
+                    </p>
+                </div>
+                <div class="basis-1/3 flex items-center justify-center">
+                    <img src="images/vit.png" alt="VIT" class="mt-3 w-full object-cover" style="height: 200px;">
+                </div>
             </div>
+
+            <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-10 w-full max-w-[1440px] mx-auto"></div>
+            <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">About Deakin University</h1>
+            <hr class="h-[2px] bg-purple-700 border-0 mt-2 mb-4">
+
+            <div class="flex flex-col lg:flex-row gap-5 about-vit-content scroll-reveal">
+                <div class="p-1 basis-2/3">
+                    <p class="mt-3 leading-relaxed text-gray-800 text-justify">
+                        As one of Australia's leading, most progressive universities, Deakin has built a strong reputation for both excellence in education that leads to employability and research that has a positive real world impact. Deakin has strong global linkages, world class research and an educational portfolio that blends the best of campus and digital delivery into a highly supportive and personalised student experience. Over 50+ year history, Deakin has grown to be one of the top universities worldwide. Its passion and commitment to teaching, research and student success is recognised by local and international ranking bodies and students.
+                    </p>
+                </div>
+                <div class="basis-1/3 flex items-center justify-center">
+                    <img src="images/TRUONG_DEAKIN_UNIVERSITY.jpg" alt="Deakin University" class="mt-3 w-full object-cover" style="height: 200px;">
+                </div>
+            </div>
+
+            <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-10 w-full max-w-[1440px] mx-auto"></div>
+            <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">About the Conference</h1>
+            <hr class="h-[2px] bg-purple-700 border-0 mt-2 mb-4">
+
+            <div class="flex flex-col lg:flex-row gap-5 about-vit-content scroll-reveal">
+                <div class="p-1 basis-2/3">
+                    <p class="mt-3 leading-relaxed text-gray-800 text-justify">
+                        QUICK 2026: Quantum Innovations for Computing and Knowledge Systems brings together leading researchers, industry pioneers, and policymakers to explore transformative breakthroughs in quantum science and their real-world applications. The scope of the conference QUICK'26 will highlight progress in quantum computing, advances in quantum algorithms, AI, machine learning, quantum materials, devices, and sensors will showcase innovations in topological states, quantum enhanced sensing, and cryogenic interfaces that underpin next-generation technologies. A special emphasis on Quantum Artificial Intelligence (QAI) will address the convergence of quantum mechanics and intelligent systems Additionally, quantum-safe cryptography, knowledge systems, and cross-disciplinary use cases will examine the role of quantum technologies.
+                    </p>
+                </div>
+                <div class="basis-1/3 flex items-center justify-center">
+                    <img src="images/conference.png" alt="Conference" class="mt-3 w-full object-cover" style="height: 200px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-purple-100">
+        <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-0 flex flex-col lg:flex-row gap-5 w-full max-w-[1440px] mx-auto">
+            <div class="flex-1">
+                <div class="p-1 about-content scroll-reveal">
+                    <div class="p-1 mt-10 objectives-content scroll-reveal">
+                        <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">Objectives</h1>
+                        <hr class="h-[2px] bg-purple-700 border-0 mt-2 mb-4">
+                        <ul class="list-disc list-inside mt-3">
+                            <li>Explore the potential applications of advanced techniques in computing to provide innovative solutions</li>
+                            <li>Provide an interdisciplinary platform for researchers, practitioners, and educators to discuss contemporary innovations in advanced computing and suggest sustainable solutions to real world problems</li>
+                            <li>Investigate novel methods in automation and intelligent techniques, integrating cutting-edge computing technologies with the use of Intelligent Process Automation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-purple-100">
+        <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-0 flex flex-col lg:flex-row gap-5 w-full max-w-[1440px] mx-auto">
+            <div class="p-1 mt-10 tracks-content scroll-reveal">
+                <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">Tracks</h1>
+                <hr class="h-[2px] bg-purple-700 border-0 mt-2 mb-4">
+                <p class="text-base mt-2">
+                    The eighth edition of QUICK'26 invites submissions of original unpublished technical papers on the following topics, but not limited to:
+                </p>
+
+                <p class="font-bold mt-3">Track I — Quantum Computing Architectures & Technologies</p>
+                <ul class="pl-6 leading-relaxed text-black">
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum processor architectures and scalable hardware design.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Superconducting qubits, trapped ions, photonic and spin-based quantum systems.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum error correction, fault tolerance, and noise mitigation methods.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum interconnects, cryogenic control systems, and hybrid classical–quantum integration.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum cloud infrastructure and distributed quantum computing environments.</li>
+                </ul>
+
+                <p class="font-bold mt-3">Track II — Quantum Algorithms & Computing Paradigms</p>
+                <ul class="pl-6 leading-relaxed text-black">
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Design and optimization of quantum algorithms for real-world applications.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum machine learning and data encoding strategies.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Variational quantum eigensolvers (VQE) and quantum approximate optimization algorithms (QAOA).</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum-inspired classical algorithms and hybrid frameworks.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Simulation of quantum systems and performance benchmarking.</li>
+                </ul>
+
+                <p class="font-bold mt-3">Track III — Quantum AI, Knowledge Systems & Applications</p>
+                <ul class="pl-6 leading-relaxed text-black">
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum-enhanced artificial intelligence and deep learning models.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum knowledge graphs and cognitive reasoning frameworks.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Applications of quantum AI in healthcare, finance, and cryptography.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum natural language processing and knowledge discovery systems.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Interdisciplinary quantum–AI collaborations for decision-making and automation.</li>
+                </ul>
+
+                <p class="font-bold mt-3">Track IV — Quantum Materials, Devices & Emerging Technologies</p>
+                <ul class="pl-6 leading-relaxed text-black">
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Novel quantum materials for computing and communication devices.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Spintronics, topological insulators, and superconducting materials.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum photonics and optoelectronic device engineering.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum sensors, metrology, and next-generation transistors.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Emerging technologies integrating quantum, AI, and nanotechnology ecosystems.</li>
+                </ul>
+
+                <p class="font-bold mt-3">Cross-Disciplinary Focus:</p>
+                <ul class="pl-6 leading-relaxed text-black">
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum networking and secure quantum communications.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Post-quantum cryptography and blockchain resilience.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Quantum education, simulation tools, and cloud-based experimentation.</li>
+                    <li class="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-black before:text-xl">Ethical, environmental, and societal implications of quantum technologies.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-purple-100">
+        <div class="px-5 sm:px-5 lg:px-10 py-5 sm:py-0 flex flex-col lg:flex-row gap-5 w-full max-w-[1440px] mx-auto">
+            <div class="p-1 mt-10 brochure-content mb-10 scroll-reveal">
+                <h1 class="text-xl sm:text-2xl font-semibold text-purple-800">Brochure</h1>
+                <hr class="h-[2px] bg-purple-700 border-0 mt-2 mb-4">
+                <div class="flex justify-center mt-3">
+                    <a href="images/Conference-Brochure-V5-Final-V4.pdf" download>
+                        <button class="px-10 py-3 text-xl rounded-md my-3 bg-purple-800 border border-purple-800 font-semibold text-white hover:bg-purple-50 hover:text-purple-800 duration-200 transition-all ease-in-out">
+                            Download Now
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
 
             
        <!-- Chief Patron -->
@@ -593,7 +699,7 @@
                     <div class="flex flex-col">
                         <div class="self-center font-bold text-3xl text-purple-800">Manuscript Submission</div>
                         <div class="mt-5 text-xl text-black">
-                            <span>For manuscript submission : </span>
+                            <span>CMT-Paper Submission Link : </span>
                             <a href="https://authors.acm.org/proceedings/production-information/preparing-your-article-with-microsoft-word">
                                 <span class="underline transition-all duration-150 ease-in-out hover:text-purple-800 cursor-pointer">Click Here</span>
                             </a>
@@ -692,6 +798,7 @@
                 { name: 'Dr. D. Jeya Mala', affiliation: 'Professor, Vellore Institute of Technology, Chennai, India' },
                 { name: 'Dr. Shiva Raj Pokhrel', affiliation: 'Senior Lecturer, Deakin University, Australia' },
                 { name: 'Dr. J. V. Thomas Abraham', affiliation: 'Associate Professor, Vellore Institute of Technology, Chennai, India' }
+                { name: 'Dr.Roopak Sinha', affiliation: 'Associate Head of School International , Transnational Editcation  Deakin University, Australia ' }
             ],
             'TPC Members': [
                 { name: 'Mr. Manoj Nambiar', affiliation: 'Chief Scientist, TCS' },
