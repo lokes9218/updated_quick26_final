@@ -809,7 +809,7 @@
         </section>
 
         <section id="committee">
-            <body>
+            <!-- <body> -->
             <div class="container">
                 <h1>Conference Committee</h1>
 
@@ -890,7 +890,7 @@
                 );
 
                 if (members.length === 0) {
-                    content.innerHTML = <div class="no-results">No results found for "${searchInput.value}"</div>;
+                    content.innerHTML = `<div class="no-results">No results found for "${searchInput.value}"</div>`;
                     return;
                 }
 
@@ -916,7 +916,7 @@
 
                 renderContent();
             </script>
-            </body>
+            <!-- </body> -->
         </section>
 <!-- Contact Section (icons moved inline / no floating icons) -->
 <section id="contact" class="px-6 py-12 max-w-[1440px] mx-auto">
